@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    margin: 0;
+    padding-top: 20vmin;
+    padding-bottom: 20vmin;
+    background: linear-gradient(0deg, rgba(241, 223, 192, 0.288) 0%, rgba(241, 223, 192, 0.349) 100%), url(assets/plage.jpg), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+    height: calc(100vh - 40vmin);
+    width: 100vw;
+    position: fixed;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 10vmin;
+}
+
+main ul {
+    list-style-type: none;
+    display: inline;
+}
+
+main img {
+    display: block;
+    height: 60vmin;
+    width: 60vmin;
+    margin: auto;
+    padding-bottom: 5vmin;
+    margin-bottom: 10vmin;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+main h2 {
+    margin-top: 10vmin;
+    padding-top: 5vmin;
+}
+
+::-webkit-scrollbar {
+    width: 5vmin;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: radial-gradient(#ccc, white);
+    border-radius: 2.5vmin;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: radial-gradient(#888, #ccc);
+}
+
+main li {
+    scroll-snap-align: start;
+}
+
+main ul li {
+    background: linear-gradient(0deg, rgba(241, 223, 192, 0.288) 0%, rgba(156, 134, 92, 0.349) 100%),url(assets/fond-carte.avif);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    top: 0;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+#footer {
+    bottom: 0;
+    box-shadow: 0 -4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+#header,
+#footer {
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    background: beige;
+    width: calc(100vw - 4vmin);
+    height: 6vmin;
+    padding: 2vmin;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Cinzel';
+}
+
+#footer form {
+    text-align: center;
+    /* Centrer les éléments horizontalement */
+}
+
+#footer label {
+    display: block;
+    /* Afficher le label sur une nouvelle ligne */
+    margin-bottom: 10px;
+    /* Espacement entre le label et l'input */
+}
+
+#footer input[type="text"],
+#footer input[type="file"],
+#footer input[type="submit"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+#footer input[type="text"] {
+    width: 300px;
+    padding: 11px;
+}
+
+
+#footer input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 11px;
+    font-family: 'Cinzel';
+    font-weight: bold;
+}
+
+#footer input[type="submit"]:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div id="formulaire-wrapper">
+    <video id="background-video" autoplay loop muted>
+        <source src="assets/fond_mer.mp4" type="video/mp4">
+    </video>
+    <img id="image-bg-formulaire" src="assets/fond-op.jpeg" alt="image fond de mer one piece">
+    <div id="formulaire-content">
+        <div class="lb-header">
+            <a href="#" class="active" id="login-box-link">Connexion</a>
+            <a href="#" class="" id="signup-box-link">Inscription</a>
+        </div>
+
+
+        <form id="connexion-process" action="login.php" method="POST">
+            <label for="username">Votre email :</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Votre mot de passe:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Connexion</button>
+        </form>
+        <!-- ... Reste du formulaire d'inscription ... -->
+
+        <!-- ... Votre code existant ... -->
+        <form id="inscription-process" action="inscription.php" method="POST" class="hidden-form">
+            <label for="newUsername">Entrer un email :</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">Entrer un mot de passe:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <label for="passwordConfirm">Confirmer votre mot de passe:</label>
+            <input type="password" id="passwordConfirm" name="passwordConfirm" required>
+            <button type="submit">Inscription</button>
+        </form>
+        <!-- ... Votre code existant ... -->
+
+    </div>
+</div>
+</body>
+<script src="switch-login-signup.js"></script>
+
+</html>

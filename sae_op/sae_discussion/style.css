@@ -1,0 +1,344 @@
+*,
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+#main-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 18px;
+}
+
+#main-background-chat {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(0deg, rgba(241, 223, 192, 0.44) 0%, rgba(241, 223, 192, 0.44) 100%), url(assets/baratie.png), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#info-chanel {
+    width: 267px;
+    height: 447px;
+    flex-shrink: 0;
+    border-radius: 0px 113px 113px 0px;
+    background: #DBC39A;
+    box-shadow: 0px 0px 12.6px 2px rgba(0, 0, 0, 0.92) inset;
+    padding: 33px;
+    margin-top: 100px;
+    margin-left: 0;
+}
+
+#info-chanel img {
+    width: 44px;
+    height: 44px;
+}
+
+#info-chanel h2{
+    padding-left: 10px;
+    padding-top: 2px;
+    font-family: 'Cinzel';
+    font-size: 30px;
+}
+
+#info-chanel button {
+    width: 189px;
+    height: 51px;
+    flex-shrink: 0;
+    background-color: #04AF00;
+    box-shadow: 6px 8px 6.8px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    font-family: 'Cinzel';
+    color: #FFF;
+    font-size: 32px;
+    margin-top: 25px;
+}
+
+#info-chanel button:hover{
+    background-color: #198f51;
+}
+
+#info-chanel div {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+#prime-pirate{
+    width: 170px;
+    height: 23Opx;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 3px solid #cfbd93;
+}
+
+#friend-list{
+    width: 180px; /*quand se menu sera ouvert il devra faire 380px, fermé la valeur reste à 180px*/
+    height: 595px;
+    flex-shrink: 0;
+    border-radius: 113px 0px 0px 113px;
+    background: #DBC39A;
+    box-shadow: 0px 0px 12.6px 2px rgba(0, 0, 0, 0.92) inset;
+    margin-right: 0;
+    margin-top: 100px;
+    right: 0;
+    position: fixed;
+}
+
+#box-discussion {
+    border-radius: 20px;
+    background: #FDFDFF;
+    box-shadow: 0px 0px 12.6px 2px rgba(0, 0, 0, 0.92) inset;
+    width: 930px;
+    height: 772px;
+    border: none;
+    margin-top: 40px;
+    overflow-y: auto;
+
+}
+
+#box-discussion>div {
+    padding-top: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+#box-discussion div .header img.profil {
+    margin-right: 10px;
+    /* Ajustez la marge selon vos besoins */
+}
+
+#box-discussion div .header h3,
+#box-discussion div .header h4 {
+    margin: 0;
+    /* Supprimez la marge par défaut pour éviter l'espacement inutile */
+}
+
+#box-discussion div .profil {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+}
+
+#box-discussion div>p {
+    overflow-wrap: break-word;
+}
+
+#submit-input {
+    border: none;
+    width: 800px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 43px;
+    background: #FDFDFF;
+    box-shadow: 0px 0px 12.6px 2px rgba(0, 0, 0, 0.92) inset;
+    margin-right: 20px;
+    padding-left: 20px;
+}
+
+#submit-button {
+    background-color: #107E7D;
+    border: 3px solid #16726f;
+    box-shadow: 8px 8px 9.3px rgba(0, 0, 0, 0.41);
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    outline: 2px solid transparent;
+}
+
+#submit-button img {
+    width: 35px;
+    height: 35px;
+    padding-left: 6px;
+    padding-top: 3px;
+}
+
+#submit-button:hover {
+    background-color: #0d6b6a;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.profil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgba(114, 114, 114, 0.43);
+}
+
+hr {
+    margin-top: 25px;
+    color: rgba(114, 114, 114, 0.23);
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h3 {
+    font-family: 'Cinzel';
+}
+
+h1 {
+    font-size: 36px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+#divPrime{
+    width: fit-content;
+}
+
+#pseudoUserPrime{
+    width: 170px;
+    display: block;
+    position: relative;
+    bottom: 78px;
+    left: 0px;
+    font-family: 'Cinzel';
+    font-weight: bold;
+    text-align: center;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1413px) {
+    #friend-list{
+        right:-113px;
+    }
+    #input-container{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    #pseudoUserPrime{
+        display: none;
+    }
+    #friend-list{
+        display: none;
+    }
+    #main-content{
+        display: block;
+    }
+    #info-chanel{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        border-radius: 0px;
+        height: 70px;
+        padding: 0;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #info-chanel button{
+        margin: 0;
+    }
+    #info-chanel div{
+        padding: 0;
+    }
+    #prime-pirate{
+        display: none;
+    }
+    #input-container{
+        justify-content: center;
+    }
+    #box-discussion{
+        height: 650px;
+    }
+}
+
+@media screen and (max-width: 937px) {
+    h1{
+        font-size: 18px;
+    }
+
+    #info-chanel img{
+        width: 22px;
+        height: 22px;
+    }
+
+    #info-chanel h2{
+        font-size: 16px;
+    }
+
+    #friend-list{
+        display: none;
+    }
+    #main-content{
+        display: block;
+        width: 100vw;
+    }
+    #info-chanel{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        border-radius: 0px;
+        height: 70px;
+        padding: 0;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100vw;
+    }
+    #info-chanel button{
+        margin: 0;
+        width: 100px;
+        height: 30px;
+        font-size: 16px;
+    }
+    #info-chanel div{
+        padding: 0;
+    }
+
+    #box-discussion{
+        width: 100vw;
+        height: 70vh;
+        border-radius: 5px;
+    }
+
+    #submit-input{
+        width: 70vw;
+    }
+    #input-container{
+        margin-bottom: 5px;
+    }
+    #prime-pirate{
+        display: none;
+    }
+    #input-container{
+        justify-content: center;
+    }
+}

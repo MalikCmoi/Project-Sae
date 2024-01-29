@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galerie</title>
+    <link rel="stylesheet" href="galerie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <h1>La galerie de la communauté</h1>
+    </div>
+    <main>
+        <ul id="posts-container">
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Photo prise d'un panda au jardin de l'acclimatation</p><img src="assets/posts/punda.webp" alt="" />
+            </li>
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Les parents du panda</p><img src="assets/posts/parent-panda.webp" alt="" />
+            </li>
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Photo d'un crocodile</p><img src="assets/posts/crocodile.webp" alt="" />
+            </li>
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Photo d'un dindon</p><img src="assets/posts/dindon.webp" alt="" />
+            </li>
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Photo d'un cheval (pegasus)</p><img src="assets/posts/pegasus.webp" alt="" />
+            </li>
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Photo d'un lion</p><img src="assets/posts/lion.webp" alt="" />
+            </li>
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Photo d'un poisson</p><img src="assets/posts/poisson.webp" alt="" />
+            </li>
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Photo d'un renne</p><img src="assets/posts/renne.webp" alt="" />
+            </li>
+            <li>
+                <h2>Monkey D. Luffy</h2>
+                <p>Photo d'un temple</p><img src="assets/posts/temple.webp" alt="" />
+            </li>
+        </ul>
+    </main>
+    <div id="footer">
+        <form id="formulaire" method="post" enctype="multipart/form-data">
+            <label for="image-upload" onclick="return false;">Choissisez votre image, (format autorisé : png, jpeg, jpg,
+                webp) : </label>
+            <input type="file" id="image-upload" name="image-upload"
+                accept="image/png, image/jpeg, image/jpg, image/webp">
+            <input type="text" id="description-post" placeholder="Choisir une description pour votre post">
+            <input type="submit" value="poster" onclick="poster(event)">
+        </form>
+    </div>
+</body>
+<script src="galerie.js"></script>
+
+</html>

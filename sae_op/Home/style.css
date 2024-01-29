@@ -1,0 +1,263 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,a{
+    font-family: cinzel;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    height: 60px;
+    width: 100%;
+    background-color: red;
+    box-shadow: 0px 13px 7.2px rgba(0, 0, 0, 0.35);
+    background-color: #083B58;
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.headerButton{
+    height: 25px;
+    width: 200px;
+    background-color: #EBCFB2;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 10px 5.5px 0px rgba(0, 0, 0, 0.32);
+    
+}
+
+main{
+    width: 100%;
+}
+
+.headerButton a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.banner{
+    width: 100%;
+    height: 1080px;
+    max-height: 1080px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/onpiece-transformed.png");
+    background-size: cover;
+}
+
+.imageBanner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.bannerText{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(235, 207, 178, 0.63);
+}
+
+.logoBanner{
+    width: 200px;
+}
+
+.bannerText h1{
+    color: #1E1E1E;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.buttonBanner{
+    width: 360px;
+    height: 71px;
+    background: #083B58;
+    box-shadow: 9px 11px 6.4px 0px rgba(0, 0, 0, 0.45);
+    display: flex;
+}
+
+.buttonBanner{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.content1Title{
+    color: #3A2913;
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 134px 0px 0px ;
+}
+
+.content1Paragraphe{
+    max-width: 1000px;
+    text-align: center;
+    position: relative;
+    margin: 67px 0 ;
+}
+
+.content1 .buttonBanner{
+    margin: 0 0 67px ;
+}
+
+.imageLink{
+    width: 805px;
+    height: 400px;
+}
+
+.blockImageLink{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 0 67px ;
+}
+
+.imageLink:nth-child(1){
+    background-image: url("images/1358278474_40589.jpg");
+    background-size: cover;
+}
+
+.imageLink:nth-child(2){
+    background-image: url("images/559781-one-piece.jpg");
+    background-size: cover;
+}
+
+.imageLink a{
+    display: block;
+    width: 100px;
+    height: 20px;
+    padding: 15px;
+    text-align: center;
+    background: #083B58;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px;
+    box-shadow: 9px 11px 6.4px 0px rgba(0, 0, 0, 0.45);
+}
+
+footer{
+    height: 200px;
+    width: 100%;
+    background-color:#083B58;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .logo img{
+    width: 200px;
+}
+
+footer ul {
+    text-align: center;
+    list-style: none;
+}
+
+footer .text a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+}
+
+footer .reseaux{
+    margin-left: 50px;
+}
+
+footer .reseaux i{
+    margin:0 10px;
+}
+
+@media screen and (max-width : 500px) {
+
+    body{
+        width: 100vw;
+    }
+
+    header{
+        flex-direction: column;
+        width: 100vw;
+        gap: 5px;
+    }
+    
+    .content1{
+        padding: 0 15px;
+    }
+
+    h2.content1Title{
+        font-size: 35px;
+    }
+
+    .content1 .buttonBanner{
+        width: 200px;
+        box-shadow: 9px 11px 6.4px 0px rgba(0, 0, 0, 0.45);
+    }
+
+    .blockImageLink{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .imageLink{
+        width: 100%;
+        background-position: center;
+    }
+
+    /* FOOTER */
+    footer{
+        font-size: 10px;
+        flex-direction: column;
+        padding: 25px 0;
+    }
+
+    footer .logo img{
+        width: 100px;
+    }
+
+    footer .reseaux{
+        margin-left: 0px;
+    }
+
+    footer .text ul{
+        padding: 0;
+    }
+}
